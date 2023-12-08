@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhikumar Gupta- Web Developer, Programmer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* p0 */
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(25, 25, 86);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            /* //bullets hatane k liye */
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            list-style: none;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            list-style: none;
+            color: rgb(136, 136, 240);
+            text-decoration: none;
+            font-size: 1.02rem;
+
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            /* '>' isse 1st div pr hi style lgegea..naki under k other divs per */
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+        }
+
+        .leftSection div {
+            width: 800%;
+        }
+
+        .rightSection {
+            width: 30%;
+        }
+
+        .rightSection img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text-purple {
+            color: rgb(157, 85, 225);
+
+        }
+
+        #element {
+            color: rgb(157, 85, 225);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: grey;
+            width:150px;
+            font-size: 9px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Abhikumar's Portfolio</div>
+            <!-- div.left -->
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home </a></li>
+                    <li><a href="/">About </a></li>
+                    <li><a href="/">Services </a></li>
+                    <li><a href="/">Projects </a></li>
+                    <li><a href="/">Contact Me </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <div class="text-purple">Abhikumar </div>
+                <div>and I'm a passionate</div>
+                <div>
+                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                    <!-- Element to contain animated typing -->
+                    <span id="element"></span>
+
+                    <!-- Load library from the CDN -->
+                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+                    <!-- Setup and start animation! -->
+                    <script>
+                        var typed = new Typed('#element', {
+                            strings: ['Web Developer', 'Web Designer', 'Competitive Programmer'],
+                            typeSpeed: 30,
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="wd.png" alt=""></img>
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="developer.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        HTML Developer
+                    </div>
+                    <div class="vertical-desc">
+                        hello
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="AIML.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        AIML Projects
+                    </div>
+                    <div class="vertical-desc">
+                        hello
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="nodejs.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                       Nodejs Developer
+                    </div>
+                    <div class="vertical-desc">
+                        hello
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="competitive_Programmer.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Competative Programmer
+                    </div>
+                    <div class="vertical-desc">
+                        hello
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="first"></div>
+            <div class="second"></div>
+            <div class="third"></div>
+            <div class="fourth"></div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
